@@ -5,8 +5,8 @@ from .permissions import IsInSpecificGroup
 # CanViewPostsGroup
 
 class PixelViewSet(viewsets.ModelViewSet):
-    # queryset = Pixel.objects.all()
-    queryset = Pixel.objects.filter(titulo__icontains='pixels')
+    queryset = Pixel.objects.all()
+    # queryset = Pixel.objects.filter(titulo__icontains='pixels')
     serializer_class = PixelSerializer
     # permission_classes = [permissions.AllowAny]
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, permissions.IsAuthenticated, IsInSpecificGroup, permissions.DjangoModelPermissions]
