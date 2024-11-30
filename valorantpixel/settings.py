@@ -42,7 +42,8 @@ APPS = [
     'rest_framework',
     'django_filters',
     'rest_framework_simplejwt',
-    'corsheaders'
+    'corsheaders',
+    'user',
 ]
 
 INSTALLED_APPS = [
@@ -97,6 +98,10 @@ REST_FRAMEWORK = {
     "NON_FIELD_ERRORS_KEY" : "error",
     "PAGE_SIZE" : 5
     }
+
+SIMPLE_JWT = {
+    'AUTH_HEADER_TYPES': ('Bearer',),
+}
 
 
 
