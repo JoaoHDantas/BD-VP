@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-b5k3gn4zcev0e7&7ccna5&st@1g0v%=rjm!8%^$e+sc6$jxt8t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = ['http://localhost:3000', 'localhost']
+ALLOWED_HOSTS = ['http://localhost:3000', 'localhost', '127.0.0.1']
 CORS_ALLOW_CREDENTIALS = True
 
 
@@ -38,7 +38,7 @@ CORS_ALLOW_CREDENTIALS = True
 APPS = [
     'interaction', 
     'pixel',
-    'userProfile',
+    'topAjudantes',
     'rest_framework',
     'django_filters',
     'rest_framework_simplejwt',
@@ -95,7 +95,7 @@ REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS" : "rest_framework.schemas.coreapi.AutoSchema" ,
     "DEFAULT_PAGINATION_CLASS" : "rest_framework.pagination.PageNumberPagination",
     "NON_FIELD_ERRORS_KEY" : "error",
-    "PAGE_SIZE" : 10
+    "PAGE_SIZE" : 5
     }
 
 

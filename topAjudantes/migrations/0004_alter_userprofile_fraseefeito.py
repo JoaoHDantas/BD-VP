@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('userProfile', '0003_userprofile_userpixels'),
+        ('topAjudantes', '0003_userprofile_userpixels'),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='userprofile',
+            model_name='topAjudantes',
             name='fraseEfeito',
             field=models.TextField(blank=True, null=True),
         ),

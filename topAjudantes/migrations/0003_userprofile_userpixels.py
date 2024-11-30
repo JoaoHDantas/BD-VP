@@ -8,12 +8,12 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('pixel', '0002_pixel_upload'),
-        ('userProfile', '0002_userprofile_profile_picture'),
+        ('topAjudantes', '0002_userprofile_profile_picture'),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='userprofile',
+            model_name='topAjudantes',
             name='userPixels',
             field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='pixel.pixel'),
         ),

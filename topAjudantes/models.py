@@ -30,8 +30,9 @@ class BaseModel(models.Model):
 
     def hard_delete(self, **kwargs):
         super(BaseModel, self).delete(**kwargs)
-class UserProfile(BaseModel):
-    fraseEfeito = models.TextField(blank=True, null=True)
+class TopAjudantes(BaseModel):
+    nicknameAjudante = models.TextField(blank=True, null=True)
     profile_picture = models.ImageField(upload_to='profile-images/', blank=True, null=True)
     userPixels = models.ForeignKey(Pixel, on_delete = models.CASCADE, blank=True, null=True)
-    # fotoPerfil = models.ImageField()
+    postPoints = models.IntegerField(blank=True, null=True)
+    
